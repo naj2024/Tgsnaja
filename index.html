@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+        <h1>EduLearn</h1>        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="topic.html">Topics</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to EduLearn</h2>
+            <section class="author-profile">
+                <h3>Meet the Author</h3>
+                <div class="author-container">
+                    <img src="profil.jpeg" alt="Author Photo" class="author-photo">
+                    <div class="author-details">
+                        <h4>Abdullah Naja</h4>
+                        <p>Naja is a passionate educator and technology enthusiast. With over 10 years of experience in teaching, he has helped countless students excel in mathematics, science, and technology. He believes in making learning accessible and engaging for everyone.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <p>Your go-to platform for interactive learning.</p>
+            <button onclick="showAlert()">Learn More</button>
+        </section>
+        <section id="topics">
+            <h2>Topics</h2>
+            <div class="topic-container">
+                <div class="topic">
+                    <h3>Mathematics</h3>
+                    <p>Learn the beauty of numbers and equations.</p>
+                </div>
+                <div class="topic">
+                    <h3>Science</h3>
+                    <p>Explore the wonders of physics, chemistry, and biology.</p>
+                </div>
+                <div class="topic">
+                    <h3>History</h3>
+                    <p>Discover the events that shaped our world.</p>
+                </div>
+            </div>
+        </section>
+        <section id="quiz">
+            <h2>Take a Quiz</h2>
+            <p>Test your knowledge with this simple quiz:</p>
+            <div id="quiz-container">
+                <p id="question">What is 2 + 2?</p>
+                <input type="number" id="answer" placeholder="Your Answer">
+                <button onclick="checkAnswer()">Submit</button>
+                <p id="feedback"></p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+    <footer>
+            <p>&copy; 2024 EduLearn. All rights reserved.</p>
+            <section id="contact">
+                <h3>Contact Us</h3>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.instagram.com/dul4b" target="_blank">
+                            <img src="instagram-icon.png" alt="Instagram"> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://abdullahnaja12@gmail.com">
+                            <img src="email-icon.png" alt="Email"> Email
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+        
+        <p>&copy; 2024 EduLearn. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

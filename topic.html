@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Topics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EduLearn</h1>  
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topics.html" class="active">Topics</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Explore Our Topics</h2>
+            <div class="topic-container">
+                <div class="topic-card">
+                    <h3>Mathematics</h3>
+                    <p>Delve into numbers, equations, and problem-solving skills.</p>
+                    <button onclick="showTopicDetails('Mathematics')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Science</h3>
+                    <p>Understand the fundamentals of physics, chemistry, and biology.</p>
+                    <button onclick="showTopicDetails('Science')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>History</h3>
+                    <p>Travel back in time and explore historical events and figures.</p>
+                    <button onclick="showTopicDetails('History')">Learn More</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Technology</h3>
+                    <p>Discover the latest advancements and innovations in tech.</p>
+                    <button onclick="showTopicDetails('Technology')">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section id="topic-details" style="display: none;">
+            <h2 id="topic-title"></h2>
+            <p id="topic-description"></p>
+            <article id="topic-article"></article>
+            <button onclick="goBack()">Back to Topics</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EduLearn. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
